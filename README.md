@@ -12,7 +12,7 @@
   <img align="right" alt="Coding Illustration" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
   
   <ul>
-    <li>🌱 I’m currently learning <strong>Data Engineering (DEPI) & Advanced Backend</strong></li>
+    <li>🌱 I’m currently learning <strong>Data Engineering (DEPI) </strong></li>
     <br>
     <li>💬 Ask me about <strong>Python, SQL, and Data Pipelines</strong></li>
     <br>
