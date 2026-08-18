@@ -16,7 +16,7 @@
     <br>
     <li>💬 Ask me about <strong>Python, SQL, and Data Pipelines</strong></li>
     <br>
-    <li>📫 You can get in touch with me on <a href="https://www.linkedin.com/in/ahmed-mohamed-yehia-086973321" target="_blank">LinkedIn</a></li>
+    <li>📫 You can get in touch with me on <a href="https://www.linkedin.com/in/ahmed-mohamed-yehia-086973321" target="_blank">LinkedIn</a> or <a href="https://wa.me/201552310173" target="_blank">WhatsApp</a></li>
   </ul>
 </div>
 
