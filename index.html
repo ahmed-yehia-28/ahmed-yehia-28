@@ -1,3 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Mohamed Yehia - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 50px 20px; }
+        
+        /* Header / Hero */
+        header { text-align: center; margin-bottom: 60px; padding: 40px; background: var(--card-bg); border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        header h1 { font-size: 2.8rem; margin-bottom: 10px; color: var(--text-main); }
+        header p.title { font-size: 1.2rem; color: var(--accent); margin-bottom: 25px; font-weight: 600; }
+        .contact-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .contact-links a { color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 8px; transition: color 0.3s; background: rgba(255,255,255,0.05); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem;}
+        .contact-links a:hover { color: var(--accent); background: rgba(56, 189, 248, 0.1); }
+        
+        section { margin-bottom: 50px; }
+        h2 { font-size: 1.8rem; margin-bottom: 25px; display: inline-block; border-bottom: 3px solid var(--accent); padding-bottom: 5px; color: var(--text-main); }
+        
+        /* About Section */
+        .summary { background: transparent; padding: 0; font-size: 1.1rem; color: var(--text-muted); border-left: 4px solid var(--accent); padding-left: 20px; }
+        
+        /* Grid Layouts */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        
+        /* Cards */
+        .card { background: var(--card-bg); padding: 25px; border-radius: 12px; transition: transform 0.3s, box-shadow 0.3s; border: 1px solid rgba(255,255,255,0.05); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); border-color: rgba(56, 189, 248, 0.3); }
+        .card h3 { color: var(--text-main); margin-bottom: 15px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
+        .card h3 i { color: var(--accent); }
+        .card ul { list-style-type: none; color: var(--text-muted); }
+        .card ul li { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .card ul li::before { content: "▹"; color: var(--accent); }
+        
+        /* Projects Special */
+        .project-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px; }
+        .project-lang { display: inline-block; padding: 4px 12px; margin-right: 5px; background: rgba(56, 189, 248, 0.1); color: var(--accent); border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+        
+        /* Timeline / List Items */
+        .timeline-item { background: var(--card-bg); padding: 25px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid var(--accent); }
+        .timeline-item h3 { margin-bottom: 8px; color: var(--text-main); font-size: 1.3rem; }
+        .timeline-item .meta { display: flex; justify-content: space-between; flex-wrap: wrap; color: var(--accent); font-weight: 600; font-size: 0.95rem; margin-bottom: 10px; }
+        .timeline-item p { color: var(--text-muted); font-size: 0.95rem; }
+        
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .timeline-item .meta { flex-direction: column; gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Ahmed Mohamed Yehia</h1>
+            <p class="title">Data Engineer</p>
+            <div class="contact-links">
+                <a href="mailto:ahmed.mohamed.yehia2007@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/ahmedyehia2812" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/ahmed-yehia-28" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="tel:+201552310173"><i class="fas fa-phone"></i> +201552310173</a>
+            </div>
+        </header>
+
+                                <!-- Summary Section -->
+        <section>
+            <h2>About Me</h2>
+            <div class="summary">
+                I help businesses and clients turn raw data into clear, interactive dashboards and reports. I transform your numbers into insights that help you grow and make the right decisions.
+                <div style="margin-top: 20px;">
+                    <a href="mailto:ahmed.mohamed.yehia2007@gmail.com" style="display: inline-block; background-color: var(--accent); color: var(--bg-color); padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: 700; transition: background 0.3s;">
+                        <i class="fas fa-paper-plane"></i> Let's Talk / Hire Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+
+                <!-- Projects Section -->
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                <div class="card project-card">
+                    <h3><i class="fab fa-github"></i> olist-ecommerce-project</h3>
+                    <p>End-to-end e-commerce data pipeline, data cleaning, transformation, and visualization using Power BI dashboards and Python.</p>
+                    <span class="project-lang"><i class="fab fa-python"></i> Python</span>
+                    <span class="project-lang"><i class="fas fa-chart-bar"></i> Power BI</span>
+                    <span class="project-lang"><i class="fas fa-file-excel"></i> Excel</span>
+                </div>
+                <div class="card project-card">
+                    <h3><i class="fab fa-github"></i> Election-Voting-Pipeline</h3>
+                    <p>Containerized data engineering pipeline designed to handle, process, and manage election voting data with SQL and Docker integration.</p>
+                    <span class="project-lang"><i class="fab fa-python"></i> Python</span>
+                    <span class="project-lang"><i class="fas fa-database"></i> SQL</span>
+                    <span class="project-lang"><i class="fab fa-docker"></i> Docker</span>
+                    <span class="project-lang"><i class="fab fa-linux"></i> Linux</span>
+                </div>
+            </div>
+        </section>
+
+                <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            <div class="timeline-item">
+                <h3>Bachelor's Degree in Artificial Intelligence</h3>
+                <div class="meta">
+                    <span>Menoufia University</span>
+                    <span>Expected Graduation: 2028</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section>
+            <h2>Trainings & Certifications</h2>
+            
+            <div class="timeline-item">
+                <h3>Data Engineering Trainee</h3>
+                <div class="meta">
+                    <span>Digital Egypt Pioneers Initiative (DEPI)</span>
+                    <span>July 2026 - Current</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>CIB Summer Internship Program - Generative AI</h3>
+                <div class="meta">
+                    <span>Commercial International Bank (CIB)</span>
+                    <span>July 2026</span>
+                </div>
                 <p>Completed training on principles, approaches, and best practices of Generative AI.</p>
             </div>
 
