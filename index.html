@@ -75,15 +75,24 @@
             </div>
         </header>
 
-                                <!-- Summary Section -->
+                                        <!-- Summary Section -->
         <section>
             <h2>About Me</h2>
             <div class="summary">
                 I help businesses and clients turn raw data into clear, interactive dashboards and reports. I transform your numbers into insights that help you grow and make the right decisions.
-                <div style="margin-top: 20px;">
-                    <a href="mailto:ahmed.mohamed.yehia2007@gmail.com" style="display: inline-block; background-color: var(--accent); color: var(--bg-color); padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: 700; transition: background 0.3s;">
-                        <i class="fas fa-paper-plane"></i> Let's Talk / Hire Me
-                    </a>
+                
+                <!-- Contact Form Box -->
+                <div style="margin-top: 25px; background: rgba(56, 189, 248, 0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.2);">
+                    <h3 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-paper-plane" style="color: var(--accent);"></i> Send me a message directly:
+                    </h3>
+                    <form action="mailto:ahmed.mohamed.yehia2007@gmail.com" method="post" enctype="text/plain" style="display: flex; flex-direction: column; gap: 12px;">
+                        <input type="email" name="Client_Email" placeholder="Your Email Address" required style="padding: 10px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--bg-color); color: var(--text-main); font-size: 0.95rem; outline: none;">
+                        <textarea name="Client_Message" placeholder="Write your project details or message here..." rows="3" required style="padding: 10px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--bg-color); color: var(--text-main); font-size: 0.95rem; outline: none; resize: vertical;"></textarea>
+                        <button type="submit" style="background-color: var(--accent); color: var(--bg-color); padding: 10px 20px; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; transition: background 0.3s; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <i class="fas fa-envelope-open-text"></i> Send Message
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
