@@ -3,187 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Yehia | Data Engineer Portfolio</title>
+    <title>Ahmed Yehia — Data Engineer & AI Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* --- Reset & Variables --- */
         :root {
-            --bg-color: #ffffff;
-            --text-primary: #111111;
-            --text-secondary: #555555;
-            --accent-color: #000000; /* أزرار وعناصر سوداء */
-            --card-bg: #f9f9f9;
-            --border-color: #e0e0e0;
-            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --bg-base: #f4f5f7;
+            --surface: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #2563eb;
+            --accent-light: #eff6ff;
+            --border: #e2e8f0;
+            --shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: var(--font-family);
-            line-height: 1.5;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.7;
             padding: 40px 20px;
-            font-size: 18px; /* حجم خط أساسي أكبر قليلاً */
         }
 
-        .container {
-            max-width: 1100px;
+        .wrapper {
+            max-width: 960px;
             margin: 0 auto;
         }
 
-        /* --- Typography --- */
-        h1 {
-            font-size: 4rem; /* نص كبير جداً للترحيب */
-            font-weight: 800;
+        /* Top Bar / Status */
+        .top-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-light);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 700;
             margin-bottom: 30px;
-            letter-spacing: -1px;
+            border: 1px solid rgba(37, 99, 235, 0.1);
         }
 
-        h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        /* Hero Section */
+        header {
+            margin-bottom: 70px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        h1 span {
+            color: var(--accent);
+        }
+
+        .bio {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 750px;
+            margin-bottom: 30px;
+        }
+
+        /* Tags Container */
+        .tags-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             margin-bottom: 40px;
         }
 
-        p {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
-            max-width: 700px;
+        .tag {
+            background: var(--surface);
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
-        /* --- Sections --- */
+        /* Section Headings */
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--text-main);
+        }
+
         section {
-            margin-bottom: 120px; /* مسافات كبيرة بين الأقسام */
+            margin-bottom: 70px;
         }
 
-        .hero {
-            text-align: left;
-            padding-top: 60px;
+        /* Education & Certs List */
+        .info-card {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
         }
 
-        /* --- Projects Grid --- */
+        .info-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 5px;
+        }
+
+        .info-card span {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .info-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 5px;
+        }
+
+        /* Projects Grid */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
         }
 
         .project-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 40px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transform: translateY(-6px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.1);
         }
 
         .project-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-main);
         }
 
         .project-card p {
-            font-size: 1.1rem;
-            margin-bottom: 25px;
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 30px;
         }
 
-        /* --- Buttons --- */
-        .btn-group {
-            display: flex;
-            gap: 15px;
-            margin-top: 40px;
-        }
-
+        /* Action Buttons */
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 12px 24px;
-            border-radius: 50px; /* أزرار دائرية الحواف */
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: background-color 0.2s, color 0.2s;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background-color: var(--accent-color);
+            background: var(--text-main);
             color: #ffffff;
-            border: 2px solid var(--accent-color);
-        }
-
-        .btn-primary:hover {
-            background-color: transparent;
-            color: var(--accent-color);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--accent-color);
-            border: 2px solid var(--border-color);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--accent-color);
-        }
-
-        /* --- Contact Section --- */
-        .contact-section {
-            text-align: left;
-        }
-        .contact-links a {
-            display: inline-block;
-            color: var(--accent-color);
+            padding: 12px 24px;
+            border-radius: 14px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.5rem;
-            margin-right: 30px;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.2s;
-        }
-        .contact-links a:hover {
-            border-color: var(--accent-color);
+            font-size: 0.95rem;
+            transition: background 0.2s;
+            width: fit-content;
         }
 
-        /* --- Footer --- */
+        .btn:hover {
+            background: var(--accent);
+        }
+
+        .btn-outline {
+            background: var(--surface);
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            margin-right: 12px;
+        }
+
+        .btn-outline:hover {
+            background: var(--accent-light);
+            color: var(--accent);
+            border-color: rgba(37, 99, 235, 0.2);
+        }
+
+        /* Contact Box */
+        .contact-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-box p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .action-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            margin-top: 100px;
-            padding-top: 40px;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-secondary);
+            color: var(--text-muted);
             font-size: 0.9rem;
+            padding-top: 20px;
         }
 
-        /* --- Responsive adjustments --- */
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(37, 99, 235, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
-            h2 { font-size: 2rem; }
-            .projects-grid { grid-template-columns: 1fr; }
+            body { padding: 20px 15px; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Ahmed Yehia.<br>Data Engineer<br>in Progress.</h1>
-            <p>I build scalable data pipelines, architect robust ETL processes, and turn complex datasets into actionable insights using Python, SQL, and modern cloud technologies.</p>
-            <div class="btn-group">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="mailto:ahmed.yehia.28@email.com" class="btn btn-secondary">Contact Me</a>
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <div class="top-badge">
+                <span class="status-dot"></span>
+                AI Student & Data Engineering Trainee at DEPI
+            </div>
+            <h1>Hi, I'm <span>Ahmed Yehia</span></h1>
+            <p class="bio">AI student at Menoufia University and aspiring data engineer. Focused on building high-performance data pipelines, robust ETL architectures, and clear analytical dashboards.</p>
+            
+            <div class="tags-wrapper">
+                <span class="tag">Python</span>
+                <span class="tag">SQL & Databases</span>
+                <span class="tag">ETL Workflows</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Git & Linux</span>
+            </div>
+
+            <div>
+                <a href="#projects" class="btn btn-outline">Explore Projects ↓</a>
+                <a href="https://www.linkedin.com/in/ahmedyehia2812" target="_blank" class="btn">Connect on LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- Education & Certifications -->
+        <section>
+            <h2>Education & Certifications</h2>
+            
+            <div class="info-card">
+                <h3>Bachelor's Degree in Artificial Intelligence | Menoufia University</h3>
+                <span>GPA: 3.37 — Expected Graduation: 2028</span>
+            </div>
+
+            <div class="info-card">
+                <h3>Data Engineering Trainee | Digital Egypt Pioneers Initiative (DEPI)</h3>
+                <span>July 2026 - Present</span>
+                <p>Advancing technical expertise through specialized training in data engineering tracks.</p>[cite: 1]
+            </div>
+
+            <div class="info-card">
+                <h3>CIB Summer Internship Program - Generative AI</h3>
+                <span>Commercial International Bank (CIB) | July 2026</span>[cite: 1]
+                <p>Completed training on principles, approaches, and best practices of Generative AI.</p>[cite: 1]
+            </div>
+
+            <div class="info-card">
+                <h3>Cisco Networking Academy & MCIT</h3>
+                <span>July 2026</span>[cite: 1]
+                <p>Certifications in Introduction to Modern AI and Introduction to Data Science.</p>[cite: 1]
             </div>
         </section>
 
@@ -193,33 +319,39 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <h3>Olist E-commerce Pipeline</h3>
-                    <p>Developed a comprehensive ETL pipeline to ingest, process, and analyze Brazilian e-commerce data, resulting in optimized query performance and a dynamic Power BI dashboard.</p>
-                    <a href="https://github.com/ahmed-yehia-28/olist-ecommerce-project" target="_blank" class="btn btn-secondary">View Repository</a>
+                    <div>
+                        <h3>Olist E-commerce Pipeline</h3>
+                        <p>An end-to-end data pipeline processing Brazilian e-commerce metrics coupled with an interactive dark-styled Power BI dashboard.</p>
+                    </div>
+                    <a href="https://github.com/ahmed-yehia-28/olist-ecommerce-project" target="_blank" class="btn btn-outline">View Repository ↗</a>
                 </div>
+
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <h3>Election Voting System</h3>
-                    <p>Engineered a containerized web-based election voting system utilizing Python (Flask/Django), PostgreSQL, and Docker for a reliable and secure end-to-end data workflow.</p>
-                    <a href="https://github.com/ahmed-yehia-28/Election-Voting-Pipeline" target="_blank" class="btn btn-secondary">View Repository</a>
+                    <div>
+                        <h3>Election Voting Pipeline</h3>
+                        <p>Containerized, robust election voting architecture utilizing Python, PostgreSQL, and Docker for secure record management.</p>
+                    </div>
+                    <a href="https://github.com/ahmed-yehia-28/Election-Voting-Pipeline" target="_blank" class="btn btn-outline">View Repository ↗</a>
                 </div>
-                 <!-- يمكنك إضافة مشروع ثالث هنا بنفس الطريقة -->
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section class="contact-section">
-            <h2>Get in Touch</h2>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
-                <a href="https://github.com/ahmed-yehia-28" target="_blank">GitHub</a>
-                <a href="mailto:ahmed.yehia.28@email.com">Email</a>
+        <section>
+            <div class="contact-box">
+                <h2>Let's Build Together</h2>
+                <p>Have an interesting project or want to discuss data architectures? Get in touch via email at <a href="mailto:ahmed.mohamed.yehia2007@gmail.com" style="color: var(--accent); text-decoration: none; font-weight: 600;">ahmed.mohamed.yehia2007@gmail.com</a>[cite: 1].</p>
+                <div class="action-row">
+                    <a href="https://github.com/ahmed-yehia-28" target="_blank" class="btn btn-outline">GitHub Profile</a>
+                    <a href="https://www.linkedin.com/in/ahmedyehia2812" target="_blank" class="btn">LinkedIn Profile</a>
+                </div>
             </div>
         </section>
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2026 Ahmed Yehia. Crafted with clean code.</p>
+            <p>&copy; 2026 Ahmed Yehia. Built with clean code & purpose.</p>
         </footer>
     </div>
 
