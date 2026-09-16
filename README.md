@@ -22,8 +22,6 @@
     <br>
     <li>💬 Ask me about <strong>Python, SQL, and Data Pipelines</strong></li>
     <br>
-    <li>🌐 Explore my <a href="https://ahmed-yehia-28.github.io/ahmed-yehia-28/" target="_blank"><strong>Interactive Portfolio</strong></a></li>
-    <br>
     <li>📫 You can get in touch with me on <a href="https://www.linkedin.com/in/ahmed-mohamed-yehia-086973321" target="_blank">LinkedIn</a> or <a href="https://wa.me/201552310173" target="_blank">WhatsApp</a></li>
   </ul>
 </div>
