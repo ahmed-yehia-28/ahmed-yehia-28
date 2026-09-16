@@ -1,6 +1,12 @@
 <h1 align="center">Hi 👋, I'm Ahmed Yehia</h1>
 
-<h3 align="center">AI Student & Data Engineer </h3>
+<h3 align="center"> Data Engineer </h3>
+
+<p align="center">
+  <a href="https://ahmed-yehia-28.github.io/ahmed-yehia-28/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Check_My_Portfolio-Live_Demo-38bdf8?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio Live Demo"/>
+  </a>
+</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ahmed-yehia-28&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
@@ -12,9 +18,11 @@
   <img align="right" alt="Coding Illustration" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
   
   <ul>
-    <li>🌱 I’m currently learning <strong>Data Engineering (DEPI) </strong></li>
+    <li>🌱 I’m currently learning <strong>Data Engineering (DEPI)</strong></li>
     <br>
     <li>💬 Ask me about <strong>Python, SQL, and Data Pipelines</strong></li>
+    <br>
+    <li>🌐 Explore my <a href="https://ahmed-yehia-28.github.io/ahmed-yehia-28/" target="_blank"><strong>Interactive Portfolio</strong></a></li>
     <br>
     <li>📫 You can get in touch with me on <a href="https://www.linkedin.com/in/ahmed-mohamed-yehia-086973321" target="_blank">LinkedIn</a> or <a href="https://wa.me/201552310173" target="_blank">WhatsApp</a></li>
   </ul>
