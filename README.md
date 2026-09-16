@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Ahmed Yehia</h1>
 
-<h3 align="center"> Data Engineer </h3>
+<h3 align="center">Data Engineer</h3>
 
 <p align="center">
   <a href="https://ahmed-yehia-28.github.io/ahmed-yehia-28/" target="_blank">
@@ -14,15 +14,22 @@
 
 <br>
 
+<div align="center">
+  <h3>About Me</h3>
+  <p><i>I help businesses and clients turn raw data into clear, interactive dashboards and reports. I transform your numbers into insights that help you grow and make the right decisions.</i></p>
+</div>
+
+<br>
+
 <div align="left">
   <img align="right" alt="Coding Illustration" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
   
   <ul>
-    <li>🌱 I’m currently learning <strong>Data Engineering (DEPI)</strong></li>
+    <li>🌱 Currently advancing technical expertise through the Data Engineering track at <strong>Digital Egypt Pioneers Initiative (DEPI)</strong>.</li>
     <br>
-    <li>💬 Ask me about <strong>Python, SQL, and Data Pipelines</strong></li>
+    <li>💬 Ask me about <strong>Python, SQL, Power BI, and Data Projects</strong>.</li>
     <br>
-    <li>📫 You can get in touch with me on <a href="https://www.linkedin.com/in/ahmed-mohamed-yehia-086973321" target="_blank">LinkedIn</a> or <a href="https://wa.me/201552310173" target="_blank">WhatsApp</a></li>
+    <li>📫 Get in touch: <a href="https://www.linkedin.com/in/ahmed-mohamed-yehia-086973321" target="_blank">LinkedIn</a> | <a href="https://wa.me/201552310173" target="_blank">WhatsApp</a> | <a href="mailto:ahmed.mohamed.yehia2007@gmail.com">Email</a></li>
   </ul>
 </div>
 
