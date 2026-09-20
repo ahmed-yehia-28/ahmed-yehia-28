@@ -41,9 +41,6 @@
         .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); border-color: rgba(56, 189, 248, 0.3); }
         .card h3 { color: var(--text-main); margin-bottom: 15px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
         .card h3 i { color: var(--accent); }
-        .card ul { list-style-type: none; color: var(--text-muted); }
-        .card ul li { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
-        .card ul li::before { content: "▹"; color: var(--accent); }
         
         /* Projects Special */
         .project-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px; }
@@ -75,7 +72,7 @@
             </div>
         </header>
 
-                                                <!-- Summary Section -->
+        <!-- Summary Section -->
         <section>
             <h2>About Me</h2>
             <div class="summary">
@@ -103,26 +100,22 @@
                 const email = document.getElementById('clientEmail').value;
                 const message = document.getElementById('clientMessage').value;
                 const subject = encodeURIComponent("New Project Inquiry from Portfolio");
-                const body = encodeURIComponent(`From: ${email}
-
-Message:
-${message}`);
+                const body = encodeURIComponent(`From: ${email}\n\nMessage:\n${message}`);
                 window.location.href = `mailto:ahmed.mohamed.yehia2007@gmail.com?subject=${subject}&body=${body}`;
             }
         </script>
 
-        
-
-                        <!-- Projects Section -->
+        <!-- Projects Section -->
         <section>
             <h2>Featured Projects</h2>
             <div class="grid">
+                <!-- Olist Project -->
                 <div class="card project-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
                         <h3><i class="fab fa-github"></i> olist-ecommerce-project</h3>
-                        <div style="margin-bottom: 12px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(56, 189, 248, 0.2);">
+                        <a href="olist-dashboard.png" target="_blank" title="Click to open image in a new tab" style="display: block; margin-bottom: 12px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(56, 189, 248, 0.3); transition: transform 0.2s;">
                             <img src="olist-dashboard.png" alt="Olist E-Commerce Analytics Dashboard" style="width: 100%; height: auto; display: block;">
-                        </div>
+                        </a>
                         <p>End-to-end e-commerce data pipeline, data cleaning, transformation, and visualization using Power BI dashboards and Python.</p>
                         <span class="project-lang"><i class="fab fa-python"></i> Python</span>
                         <span class="project-lang"><i class="fas fa-chart-bar"></i> Power BI</span>
@@ -135,6 +128,7 @@ ${message}`);
                     </div>
                 </div>
                 
+                <!-- Election Voting Pipeline Project -->
                 <div class="card project-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
                         <h3><i class="fab fa-github"></i> Election-Voting-Pipeline</h3>
@@ -153,7 +147,7 @@ ${message}`);
             </div>
         </section>
 
-                <!-- Education Section -->
+        <!-- Education Section -->
         <section>
             <h2>Education</h2>
             <div class="timeline-item">
@@ -165,7 +159,7 @@ ${message}`);
             </div>
         </section>
 
-                <!-- Certifications Section -->
+        <!-- Certifications Section -->
         <section>
             <h2>Trainings & Certifications</h2>
             
